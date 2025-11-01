@@ -1,0 +1,39 @@
+.navbar-custom {
+  background-color: #060329 !important;
+  
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: #fff !important;
+  margin-right: 10px;
+  border: 1px solid#060329;
+}
+
+.navbar-custom .nav-link:hover, .navbar-custom .navbar-brand:hover {
+  color: #00ad4e !important; /* optional hover color (gold-like) */
+
+  border-radius: 5px;
+  border: 1px solid#00ad4e;
+}
+
+.d-flex div{
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.d-flex div img{
+    border-radius: 40%;
+}
+h6{
+    opacity: 50%;
+}
+
+h2{
+    opacity: 70%;
+}
+h5{
+    color: #00ad4e;
+}
+
