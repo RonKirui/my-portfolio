@@ -4,8 +4,8 @@ interface homeProps {
 }
 function Home({ name, image }: homeProps) {
   return (
-    <div className="d-flex justify-content-evenly justify-content-center align-items-center vh-100">
-      <div>
+    <div className="hero-section">
+      <div className="text-container">
         <h5 className="greeting"> Hi, my name is</h5>
         <h1>{name}</h1>
         <h2>Software Developer</h2>
@@ -20,8 +20,12 @@ function Home({ name, image }: homeProps) {
           View My Work
         </button>
       </div>
-      <div className="col-2 col-lg-4 text-center mb-4 mb-lg-0 rounded-circle shadow">
-        <img src={image} className="img-fluid" alt="..."></img>
+      <div className="image-container">
+        <img
+          src={image}
+          className="img-fluid w-100 rounded-circle shadow"
+          alt="..."
+        ></img>
       </div>
     </div>
   );

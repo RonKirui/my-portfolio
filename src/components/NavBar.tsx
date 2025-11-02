@@ -7,7 +7,7 @@ function NavBar() {
         <h1>Portfolio</h1>
         <a className="navbar-brand fw-bold" href="#home"></a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler btn-primary"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"

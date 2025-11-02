@@ -2,7 +2,15 @@
   background-color: #060329 !important;
   
 }
+.navbar{
 
+  color: #fff;
+}
+
+.navbar-toggler{
+  color: #252b5c;
+  background-color: #252b5c;
+}
 .navbar-custom .nav-link,
 .navbar-custom .navbar-brand {
   color: #fff !important;
@@ -11,7 +19,7 @@
 }
 
 .navbar-custom .nav-link:hover, .navbar-custom .navbar-brand:hover {
-  color: #00ad4e !important; /* optional hover color (gold-like) */
+  color: #00ad4e !important; 
 
   border-radius: 5px;
   border: 1px solid#00ad4e;
@@ -20,8 +28,8 @@
 .d-flex div{
     justify-content: center;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .d-flex div img{
     border-radius: 40%;
@@ -36,4 +44,29 @@ h2{
 h5{
     color: #00ad4e;
 }
+.hero-section {
+  columns: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 2rem;
+}
+.text-container,
+.image-container {
+  flex: 1; /* Each takes 50% */
+}
+.image-container img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 
