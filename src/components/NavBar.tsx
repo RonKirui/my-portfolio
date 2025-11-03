@@ -1,11 +1,14 @@
 //import React from "react";
 
+import { Link } from "react-router-dom";
+
 function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-custom shadow-sm">
       <div className="container">
-        <h1>Portfolio</h1>
-        <a className="navbar-brand fw-bold" href="#home"></a>
+        <Link className="navbar-brand fw-bold" to={"/"}>
+          <h1>Portfolio</h1>
+        </Link>
         <button
           className="navbar-toggler btn-primary"
           type="button"
@@ -20,29 +23,29 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#about">
+              <Link className="nav-link" to={"/"}>
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#skills">
+              <Link className="nav-link" to={"/skills"}>
                 Skills
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projects">
+              <Link className="nav-link" to={"/projects"}>
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#experience">
+              <Link className="nav-link" to={"/Experience"}>
                 Experience
-              </a>
+              </Link>
             </li>
             <li className="nav-item ">
-              <a className="nav-link active" href="#contact">
+              <Link className="nav-link active" to={"/contact"}>
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <button type="button" className="btn btn-outline-success">
