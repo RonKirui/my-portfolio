@@ -1,7 +1,4 @@
-interface ExperienceProps {
-  experience_image: string;
-}
-function Experience({ experience_image }: ExperienceProps) {
+function Experience() {
   return (
     <div className="page-body">
       <div className="page-body-container">

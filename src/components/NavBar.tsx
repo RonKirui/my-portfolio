@@ -7,7 +7,7 @@ function NavBar() {
     <nav className="navbar navbar-expand-lg navbar-custom shadow-sm">
       <div className="container">
         <Link className="navbar-brand fw-bold" to={"/"}>
-          <h1>Portfolio</h1>
+          <h2>Portfolio</h2>
         </Link>
         <button
           className="navbar-toggler btn-primary"

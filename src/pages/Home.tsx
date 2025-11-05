@@ -23,7 +23,7 @@ function Home({ name, image }: homeProps) {
       <div className="image-container">
         <img
           src={image}
-          className="img-fluid w-100 rounded-circle shadow"
+          className="img-fluid w-100 rounded-circle"
           alt="..."
         ></img>
       </div>

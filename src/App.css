@@ -1,13 +1,19 @@
 #root {
   margin: 0 auto;
   color: white;
-  background-color: #060329;
+  
+  height: 100vh;
 }
+
 html, body{
   margin: 0;
   padding: 0;
-  height: 100%;
-  background-color: #060329;
+  background-image: url('./assets/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
 }
 
 .logo {

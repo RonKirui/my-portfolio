@@ -7,7 +7,6 @@ import Navbar from "./components/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import image from "./assets/profile.png";
-import experience_image from "./assets/experience.png";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
@@ -29,10 +28,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
-          <Route
-            path="/Experience"
-            element={<Experience experience_image={experience_image} />}
-          ></Route>
+          <Route path="/Experience" element={<Experience />}></Route>
         </Routes>
       </Router>
     </body>
