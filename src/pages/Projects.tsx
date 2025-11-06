@@ -1,5 +1,5 @@
 function Projects() {
-  return <>Hello world this is my Preojects</>;
+  return <>Projects are comming soon</>;
 }
 
 export default Projects;

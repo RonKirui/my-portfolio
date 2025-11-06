@@ -9,9 +9,9 @@ import Home from "./pages/Home";
 import image from "./assets/profile.png";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact";
-import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
-import Experience from "./pages/Experience";
+import logo from "./assets/logo.png";
+import Footer from "./components/Footer";
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -19,18 +19,15 @@ function App() {
   return (
     <body>
       <Router>
-        <Navbar />
+        <Navbar logo={logo} />
         <Routes>
-          <Route
-            path="/"
-            element={<Home name={"Ronald Kiplangat"} image={image} />}
-          ></Route>
+          <Route path="/" element={<Home image={image} />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/skills" element={<Skills />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/Experience" element={<Experience />}></Route>
+          <Route path="/portfolio" element={<Projects />}></Route>
         </Routes>
       </Router>
+
+      <Footer />
     </body>
   );
 }

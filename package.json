@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "fullpage.js": "^4.0.37",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-fullpage": "^0.1.16",
+    "react-fullpage.js": "^0.1.19",
     "react-router-dom": "^7.9.5"
   },
   "devDependencies": {

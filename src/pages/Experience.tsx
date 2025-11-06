@@ -13,61 +13,96 @@ function Experience() {
             <div className="timeline-item-title">
               <div className="timeline-dot"></div>
               <h5>
-                <div>Freelance Self-Employed </div>
-                <div>2021 - Present</div>
+                ICT Officer – (Networking, HTML, CSS, JavaScript, PHP, MySQL)
               </h5>
             </div>
-            <h6>Software Developer – Android Apps (Java, Kotlin)</h6>
+            <div className="timeline-item-title">
+              <h6>
+                <div>ICT Office - County Government of Bomet </div>
+                <div>2022 - 2023</div>
+              </h6>
+            </div>
+
             <ul>
               <li>
-                Designed and implemented automation scripts using Selenium for
-                platforms such as WhatsApp
+                Assisted in maintaining and troubleshooting county ICT systems
+                and networks.
               </li>
               <li>
-                Built Android applications integrated with Firebase Database
+                Developed and updated internal web-based tools to improve data
+                access and efficiency.
               </li>
               <li>
-                Developed a Tkinter-based desktop GUI toautomate repetitive
-                browser tasks with user-input parameters.
+                Supported digital records management and provided tech
+                assistance to staff.
               </li>
               <li>
-                Created several web projects using HTML, CSS, and JavaScript
-              </li>
-              <li>
-                Offered digital computer graphics and academic assistance
-                throughFiverr and social media platforms
+                Collaborated with the ICT team to enhance security and
+                streamline operations.
               </li>
             </ul>
           </div>
-
-          <div className="timeline-item-title">
-            <div className="timeline-dot"></div>
-            <h5>
-              <div>Freelance Self-Employed </div>
-              <div>2021 - Present</div>
-            </h5>
+          <div className="timeline-item">
+            <div className="timeline-item-title">
+              <div className="timeline-dot"></div>
+              <h5>Intern & Attaché – (Networking, IT-Support)</h5>
+            </div>
+            <div className="timeline-item-title">
+              <h6>
+                <div>ICT Office - County Government of Bomet </div>
+                <div>Jul - Sep 2021</div>
+              </h6>
+            </div>
+            <ul>
+              <li>
+                Assisted in maintaining and troubleshooting computer systems and
+                network infrastructure.
+              </li>
+              <li>
+                Supported the ICT team in software and hardware installation,
+                improving system uptime.
+              </li>
+              <li>
+                SHelped in data entry, database management, and documentation
+                for county digital records.
+              </li>
+              <li>
+                Contributed to enhancing cybersecurity practices by implementing
+                basic access control measures.
+              </li>
+            </ul>
           </div>
-          <h6>Software Developer – Android Apps (Java, Kotlin)</h6>
-          <ul>
-            <li>
-              Designed and implemented automation scripts using Selenium for
-              platforms such as WhatsApp
-            </li>
-            <li>
-              Built Android applications integrated with Firebase Database
-            </li>
-            <li>
-              Developed a Tkinter-based desktop GUI toautomate repetitive
-              browser tasks with user-input parameters.
-            </li>
-            <li>
-              Created several web projects using HTML, CSS, and JavaScript
-            </li>
-            <li>
-              Offered digital computer graphics and academic assistance
-              throughFiverr and social media platforms
-            </li>
-          </ul>
+          <div className="timeline-item">
+            <div className="timeline-item-title">
+              <div className="timeline-dot"></div>
+              <h5>
+                Software Developer (React.js, Node.js, Java, Android, Python)
+              </h5>
+            </div>
+            <div className="timeline-item-title">
+              <h6>
+                <div>Freelance (Remote) </div>
+                <div>2021 - Present</div>
+              </h6>
+            </div>
+            <ul>
+              <li>
+                Designed and developed responsive websites and Android
+                applications for clients.
+              </li>
+              <li>
+                Built REST APIs and integrated Firebase for authentication and
+                data storage.
+              </li>
+              <li>
+                Delivered full-stack solutions using React, Node.js, Java, and
+                Firebase.
+              </li>
+              <li>
+                Managed complete project lifecycles — from idea to deployment.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
