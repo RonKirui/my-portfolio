@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import logo from "./assets/logo.png";
+import project_image1 from "./assets/image_0.jpg";
 import Footer from "./components/Footer";
 
 function App() {
@@ -23,7 +24,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home image={image} />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/portfolio" element={<Projects />}></Route>
+          <Route
+            path="/portfolio"
+            element={<Projects image={project_image1} />}
+          ></Route>
         </Routes>
       </Router>
 
