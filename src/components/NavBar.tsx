@@ -1,6 +1,6 @@
 //import React from "react";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 interface NavBarProps {
@@ -10,15 +10,31 @@ interface NavBarProps {
 function NavBar({ logo }: NavBarProps) {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
+  const navRef = useRef<HTMLDivElement>(null); // reference to navbar container
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   const closeMenu = () => setIsNavCollapsed(true);
+
+  // Close navbar when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setIsNavCollapsed(true);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
   return (
     <nav
+      ref={navRef}
       className="navbar navbar-expand-lg shadow-sm navbar-dark navbar-custom"
       style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
     >
       <div className="container">
-        <Link className="navbar-brand fw-bold" to={"/"}>
+        <Link className="navbar-brand fw-bold" onClick={closeMenu} to={"/"}>
           <img
             src={logo}
             className="logo img-fluid w-100 rounded-circle"

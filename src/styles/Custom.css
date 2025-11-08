@@ -293,6 +293,7 @@ input{
   text-align: left;
 }
 .card-project-text{
+  margin-top: 10px;
   margin-left: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   
@@ -302,10 +303,12 @@ input{
   display: flex;
   flex-direction: row;
 }
-.flex-teck-stack span{
+.flex-teck-stack div{
   background-color: rgb(128, 128, 128, 0.5);
   color: #fff;
-  padding: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: fit-content;
   border-radius: 10px;
   margin-right: 10px;
 }

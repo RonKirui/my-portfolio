@@ -1,13 +1,19 @@
 import { Link } from "react-router-dom";
 import About from "./About";
 import Experience from "./Experience";
+import { motion } from "framer-motion";
 
 interface homeProps {
   image: string;
 }
 function Home({ image }: homeProps) {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -40 }}
+      transition={{ duration: 1 }}
+    >
       <div className="hero-section">
         <div className="text-container">
           <h1>Front-End, Back-End & Android Developer</h1>
@@ -31,7 +37,7 @@ function Home({ image }: homeProps) {
       </div>
       <About />
       <Experience />
-    </div>
+    </motion.div>
   );
 }
 export default Home;
