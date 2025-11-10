@@ -1,12 +1,8 @@
-import { useState } from "react";
-
 interface ContactProps {
   images: string[];
 }
 
 function Contact({ images }: ContactProps) {
-  const [name, setName] = useState("");
-
   return (
     <div className="body-page-h contact-section">
       <div className="project-container">
