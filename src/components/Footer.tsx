@@ -1,4 +1,13 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // smooth scrolling
+    });
+  };
+
   return (
     <div>
       <div className="footer-section">
@@ -42,58 +51,20 @@ function Footer() {
             <h5>Send Message</h5>
             <div className="footer-underline"></div>
             <br />
-            <form className="row g-3">
-              <div className="col-md-6">
-                <label htmlFor="yourname" className="form-label">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="inputname"
-                  placeholder="Enter Your Name"
-                />
-              </div>
-              <div className="col-md-6">
-                <label htmlFor="youremail" className="form-label">
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="inputemail"
-                  placeholder="Enter Your Email"
-                />
-              </div>
-              <div className="col-12">
-                <label htmlFor="subject" className="form-label">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="imputsubject"
-                  placeholder="Enter Email Subject"
-                />
-              </div>
-              <div className="col-12 r-5">
-                <label htmlFor="message" className="form-label">
-                  Message
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="inputmessage"
-                  placeholder="Enter Your MEssage"
-                />
-              </div>
-
-              <div className="col-12">
-                <button type="submit" className="btn btn-primary">
-                  Send
+            <div className="send-message-card">
+              Do you have some projects you would want us to work on together?
+              <Link className="nav-link-get-in-touch" to={"/contact"}>
+                <button
+                  className="btn getintouch"
+                  onClick={() => {
+                    scrollToTop();
+                  }}
+                >
+                  Get In Touch
                 </button>
-              </div>
-            </form>
+              </Link>
+              <div></div>
+            </div>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ function Projects({ image }: PortfolioProps) {
         <div className="body-page">
           <div className="project-container">
             <div className="porfolio-welcome">
-              <h1>Welcome To My Portfolio</h1>
+              <h1>WELCOME TO MY PORTFOLIO</h1>
               <br />
               Here’s a collection of my projects showcasing creativity,
               precision, and problem-solving through code. Each project reflects
@@ -25,8 +25,13 @@ function Projects({ image }: PortfolioProps) {
               projects I’ve developed, simply click the button below to discover
               more.
             </div>
-            <button type="button" className="btn btn-outline-success">
-              <a href="https://github.com/RonKirui">Check My GitHub</a>
+            <button
+              type="button"
+              className="btn btn-outline-success check-github"
+            >
+              <a href="https://github.com/RonKirui" target="_blank">
+                Check My GitHub
+              </a>
             </button>
             <div className="portfolio-section-divider"></div>
             <div className="projects-flex-container">

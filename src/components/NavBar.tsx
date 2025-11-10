@@ -27,6 +27,12 @@ function NavBar({ logo }: NavBarProps) {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // smooth scrolling
+    });
+  };
   return (
     <nav
       ref={navRef}
@@ -54,19 +60,36 @@ function NavBar({ logo }: NavBarProps) {
         >
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" onClick={closeMenu} to={"/portfolio"}>
+              <Link
+                className="nav-link"
+                onClick={() => {
+                  scrollToTop();
+                  closeMenu();
+                }}
+                to={"/portfolio"}
+              >
                 Portfolio
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" onClick={closeMenu} to={"/blog"}>
+              <Link
+                className="nav-link"
+                onClick={() => {
+                  scrollToTop();
+                  closeMenu();
+                }}
+                to={"/blog"}
+              >
                 Blog
               </Link>
             </li>
             <li className="nav-item ">
               <Link
                 className="nav-link active"
-                onClick={closeMenu}
+                onClick={() => {
+                  scrollToTop();
+                  closeMenu();
+                }}
                 to={"/contact"}
               >
                 Contact
@@ -75,7 +98,10 @@ function NavBar({ logo }: NavBarProps) {
             <li className="nav-item">
               <button
                 type="button"
-                onClick={closeMenu}
+                onClick={() => {
+                  scrollToTop();
+                  closeMenu();
+                }}
                 className="btn btn-outline-success"
               >
                 Resume
