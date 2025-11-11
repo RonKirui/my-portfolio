@@ -102,6 +102,10 @@ h6{
 .project-container form{
   width: 100% !important;
 }
+.name-email-flex{  
+  flex-direction: column !important;
+
+}
 }
 .hero-section .btn {
   margin-top: 20px;

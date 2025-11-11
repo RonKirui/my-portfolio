@@ -17,13 +17,9 @@ function Projects({ image }: PortfolioProps) {
               <h1>WELCOME TO MY PORTFOLIO</h1>
               <br />
               Here’s a collection of my projects showcasing creativity,
-              precision, and problem-solving through code. Each project reflects
-              my passion for building functional and visually appealing digital
-              solutions.
-              <br />
-              If you’d like to explore more of my work and see the variety of
-              projects I’ve developed, simply click the button below to discover
-              more.
+              precision, and problem-solving through code. If you’d like to
+              explore more of my work and see the variety of projects I’ve
+              developed, simply click the button below to discover more.
             </div>
             <button
               type="button"
