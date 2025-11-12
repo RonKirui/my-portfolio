@@ -1,8 +1,34 @@
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 interface ContactProps {
   images: string[];
 }
 
 function Contact({ images }: ContactProps) {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_zqhxn26", // your EmailJS Service ID
+        "template_z4bth5r", // your Template ID
+        form.current!,
+        "cY1lddohMVMAtU8CH" // your Public Key
+      )
+      .then(
+        (result) => {
+          console.log("✅ Message sent:", result.text);
+          alert("Your message was sent successfully!");
+          (form.current as HTMLFormElement).reset(); // clear the form
+        },
+        (error) => {
+          console.error("❌ Error sending message:", error.text);
+          alert("Oops! Something went wrong, please try again later.");
+        }
+      );
+  };
   return (
     <div className="body-page-h contact-section">
       <div className="project-container">
@@ -39,15 +65,16 @@ function Contact({ images }: ContactProps) {
 
         <div className="portfolio-section-divider"></div>
 
-        <form>
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="name-email-flex">
             <div className="c-flex">
               <label className="input-label">Your Name</label>
               <input
                 className="input-field"
                 type="text"
-                id="inputname"
+                name="name"
                 placeholder="Enter your name here..."
+                required
               />
             </div>
             <div className="c-flex">
@@ -55,8 +82,9 @@ function Contact({ images }: ContactProps) {
               <input
                 className="input-field"
                 type="text"
-                id="inputemail"
+                name="inputemail"
                 placeholder="Enter your email here..."
+                required
               />
             </div>
           </div>
@@ -64,18 +92,22 @@ function Contact({ images }: ContactProps) {
           <input
             className="input-field"
             type="text"
-            id="inputsubject"
+            name="inputsubject"
             placeholder="Enter Message subject here..."
+            required
           />
           <label className="input-label">Message</label>
           <textarea
             className="input-field"
-            id="inputmessage"
+            name="message"
             placeholder="Write your message here..."
+            required
           />
-          <button type="button" className="btn btn-primary btn-send-msg">
-            Send
-          </button>
+          <div className="button-send-message">
+            <button type="submit" className="btn btn-primary btn-send-msg">
+              Send Message
+            </button>
+          </div>
         </form>
       </div>
     </div>
