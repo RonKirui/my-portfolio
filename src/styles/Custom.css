@@ -13,8 +13,13 @@
   margin-right: 10px;
   border: 1px transparent;
 }
+.blog-navbar-brand img{
+  border-radius: 50%;
+  width: 40px;
+  margin-left: 20px;
+}
 .navbar-custom .navbar-brand{
-  width: 70px;
+  width: 40px;
 }
 .navbar-toggler{
   border: none;
@@ -432,12 +437,22 @@ textarea{
   .projects-flex-container{
   grid-template-columns: repeat(2, 1fr) !important;
   }
+  .blog-content-section-elements{
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+.blog-content-section{
+  width: 95% !important;
+
+}
 }
 
 @media (max-width: 620px) {
   .projects-flex-container{ 
   grid-template-columns: repeat(1, 1fr) !important;
   }
+  .blog-content-section-elements{
+  grid-template-columns: repeat(1, 1fr) !important;
+}
 }
 
 .blog-container{
@@ -445,6 +460,57 @@ textarea{
   min-height: 100vh;
   color: black;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 
+}
+.blog-content-section{
+  margin-top: 70px;
+  width: 80%;
+  height: 100%;
+  box-shadow:
+    -5px 0 10px rgba(0,0,0,0.15), /* left shadow */
+     5px 0 10px rgba(0,0,0,0.15); /* right shadow */
+
+}
+.search-ic{
+  height: 20px;
+}
+.blog-content-section-elements{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.bg-w{
+  margin: 10px;
+  background: #fff;
+  border-radius: 10px;
+  color: black; box-shadow:
+    -5px 0 10px rgba(0,0,0,0.15), /* left shadow */
+     5px 0 10px rgba(0,0,0,0.15);
+}
+.action-section{
+  display: flex;
+  width: 100%;
+  align-items: start;
+  text-align: left;
+  margin-bottom: 10px;
+
+  
+}
+.action-section img{
+  height: 20px;
+  margin-left: 20px;
+}
+.blog-card-container img{
+  height: 170px;
+  
+}
+.blog-container{
+  box-shadow: 0 10px rgba(0,0,0,0.15); 
+  
+}
+.card-blog-text{
+  margin-left: 20px;
+  text-align: left;
 }

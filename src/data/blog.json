@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "How to Send Emails from a React Contact Form using EmailJS",
+      "description": "A practical, step-by-step tutorial that teaches beginners how to collect user input and send it directly to your email — without a backend.",
+      "image": "/public_assets/image_0.jpg",
+      "tech_stack": ["Java", "Firebase", "Android", "FCM"],
+      "live_demo": "",
+      "github": "https://github.com/RonKirui/Chimmuni"
+    },
+    {
+      "id": 2,
+      "title": "Modern UI Tips for Developers: Shadows, Spacing, and Smooth Animations",
+      "description": "A design-focused blog teaching simple UI tricks (shadows, spacing, alignment, transitions, animations) using examples you applied in your own portfolio.",
+      "image": "/public_assets/image_0.jpg",
+      "tech_stack": ["Java", "Firebase", "Android", "SQLite"],
+      "live_demo": "",
+      "github": "https://github.com/RonKirui/Alphapp-Dairy"
+    },
+    {
+      "id": 3,
+      "title": "10 Things I Learned While Building My First Real React Project",
+      "description": "A personal reflection article where you share practical lessons and mistakes you made while building your website.",
+      "image": "/public_assets/image_0.jpg",
+      "tech_stack": ["Java", "Firebase", "Android", "SQLite"],
+      "live_demo": "",
+      "github": "https://github.com/RonKirui/TeaPlus"
+    },
+    {
+      "id": 4,
+      "title": "How I Built My Personal Portfolio Using React: A Complete Breakdown",
+      "description": "A detailed walkthrough of how you built your portfolio website using React, covering components, routing, responsiveness, animations, and best practices.",
+      "image": "/public_assets/image_0.jpg",
+      "tech_stack": ["Java", "Firebase", "Android", "SQLite"],
+      "live_demo": "",
+      "github": "https://github.com/RonKirui/TeaPlus"
+    }
+  ]
+}
