@@ -72,11 +72,11 @@ function NavBar({ logo }: NavBarProps) {
             <li className="nav-item">
               <Link
                 className="nav-link"
+                to={"/blog"}
                 onClick={() => {
                   scrollToTop();
                   closeMenu();
                 }}
-                to={"/blog"}
               >
                 Blog
               </Link>

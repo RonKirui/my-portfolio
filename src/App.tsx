@@ -11,12 +11,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import logo from "./assets/logo.png";
-import project_image1 from "./assets/image_0.jpg";
 import Footer from "./components/Footer";
 import ic_fb from "./assets/ic_fb.png";
 import ic_git from "./assets/ic_git.png";
 import ic_lkdin from "./assets/ic_lkdin.png";
 import Blog from "./pages/Blog";
+import MainLayout from "./layouts/MainLayout";
+import SpecialLayout from "./layouts/SpacialLayout";
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -25,17 +26,16 @@ function App() {
   return (
     <div className="show">
       <Router>
-        <Navbar logo={logo} />
         <Routes>
-          <Route path="/" element={<Home image={image} />}></Route>
-          <Route path="/contact" element={<Contact images={images} />}></Route>
-          <Route
-            path="/portfolio"
-            element={<Projects image={project_image1} />}
-          ></Route>
-          <Route path="/blog" element={<Blog />}></Route>
+          <Route element={<MainLayout logo={logo} />}>
+            <Route path="/" element={<Home image={image} />} />
+            <Route path="/contact" element={<Contact images={images} />} />
+            <Route path="/portfolio" element={<Projects />} />
+          </Route>
+          <Route element={<SpecialLayout />}>
+            <Route path="/blog" element={<Blog />} />
+          </Route>
         </Routes>
-        <Footer />
       </Router>
     </div>
   );

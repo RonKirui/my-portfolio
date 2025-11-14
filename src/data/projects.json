@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Chimmuni",
+      "description": "An android app that helps mothers to keep track of their children’s immunizations and schedules.",
+      "image": "/public_assets/image_0.jpg",
+      "tech_stack": ["Java", "Firebase", "Android", "FCM"],
+      "live_demo": "",
+      "github": "https://github.com/RonKirui/Chimmuni"
+    },
+    {
+      "id": 2,
+      "title": "Alphapp-Dairy",
+      "description": "Android app that enables farmers to record, monitor, and manage daily dairy and poultry production, health, and inventory...",
+      "image": "/public_assets/image_0.jpg",
+      "tech_stack": ["Java", "Firebase", "Android", "SQLite"],
+      "live_demo": "",
+      "github": "https://github.com/RonKirui/Alphapp-Dairy"
+    },
+    {
+      "id": 3,
+      "title": "TeaPlus",
+      "description": "An Android app built in Java that enables tea farmers to record, track and manage tea leaves production.",
+      "image": "/public_assets/image_0.jpg",
+      "tech_stack": ["Java", "Firebase", "Android", "SQLite"],
+      "live_demo": "",
+      "github": "https://github.com/RonKirui/TeaPlus"
+    }
+  ]
+}
