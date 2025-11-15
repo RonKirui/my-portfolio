@@ -7,7 +7,8 @@
       "image": "/public_assets/image_0.jpg",
       "tech_stack": ["Java", "Firebase", "Android", "FCM"],
       "live_demo": "",
-      "github": "https://github.com/RonKirui/Chimmuni"
+      "github": "https://github.com/RonKirui/Chimmuni",
+      "likes":0
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "image": "/public_assets/image_0.jpg",
       "tech_stack": ["Java", "Firebase", "Android", "SQLite"],
       "live_demo": "",
-      "github": "https://github.com/RonKirui/Alphapp-Dairy"
+      "github": "https://github.com/RonKirui/Alphapp-Dairy",
+      "likes":0
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "image": "/public_assets/image_0.jpg",
       "tech_stack": ["Java", "Firebase", "Android", "SQLite"],
       "live_demo": "",
-      "github": "https://github.com/RonKirui/TeaPlus"
+      "github": "https://github.com/RonKirui/TeaPlus",
+      "likes":0
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "image": "/public_assets/image_0.jpg",
       "tech_stack": ["Java", "Firebase", "Android", "SQLite"],
       "live_demo": "",
-      "github": "https://github.com/RonKirui/TeaPlus"
+      "github": "https://github.com/RonKirui/TeaPlus",
+      "likes":0
     }
   ]
 }

@@ -94,16 +94,23 @@ function NavBar({ logo }: NavBarProps) {
               </Link>
             </li>
             <li className="nav-item">
-              <button
-                type="button"
-                onClick={() => {
-                  scrollToTop();
-                  closeMenu();
-                }}
-                className="btn btn-outline-success"
+              <a
+                href="public/ronald-kiplangat-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                type="application/pdf"
               >
-                Resume
-              </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    scrollToTop();
+                    closeMenu();
+                  }}
+                  className="btn btn-outline-success"
+                >
+                  Resume
+                </button>
+              </a>
             </li>
           </ul>
         </div>
