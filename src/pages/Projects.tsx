@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
-interface PortfolioProps {
-  image: string;
-}
 function Projects() {
   return (
     <motion.div

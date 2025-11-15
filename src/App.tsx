@@ -3,7 +3,6 @@
 //import viteLogo from '/vite.svg'
 import "./App.css";
 //import TopNavbar from "./components/TopNavBar";
-import Navbar from "./components/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import image from "./assets/profile.png";
@@ -11,7 +10,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import logo from "./assets/logo.png";
-import Footer from "./components/Footer";
 import ic_fb from "./assets/ic_fb.png";
 import ic_git from "./assets/ic_git.png";
 import ic_lkdin from "./assets/ic_lkdin.png";
