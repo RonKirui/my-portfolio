@@ -16,6 +16,7 @@ import ic_lkdin from "./assets/ic_lkdin.png";
 import Blog from "./pages/Blog";
 import MainLayout from "./layouts/MainLayout";
 import SpecialLayout from "./layouts/SpacialLayout";
+import ProjectDetails from "./pages/ProjectDetails";
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -29,6 +30,7 @@ function App() {
             <Route path="/" element={<Home image={image} />} />
             <Route path="/contact" element={<Contact images={images} />} />
             <Route path="/portfolio" element={<Projects />} />
+            <Route path="/project-details/:id" element={<ProjectDetails />} />
           </Route>
           <Route element={<SpecialLayout />}>
             <Route path="/blog" element={<Blog />} />
