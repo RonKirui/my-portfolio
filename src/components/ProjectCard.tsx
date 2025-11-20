@@ -22,7 +22,7 @@ export default function ProjectCard() {
           <h6>{project.description}</h6>
         </div>
         <div className="flex-teck-stack">
-          {project.tech_stack.map((stack) => (
+          {project.techStack.map((stack) => (
             <div>{stack}</div>
           ))}
         </div>

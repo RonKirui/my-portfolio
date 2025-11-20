@@ -35,11 +35,11 @@ export default function ProjectDetails() {
           }}
         >
           <div className="text-container">
-            <h1>{project.title}</h1>
+            <h1>{project.name}</h1>
             <p>{project.description}</p>
 
             <div className="flex-teck-stack">
-              {project.tech_stack.map((stack) => (
+              {project.techStack.map((stack) => (
                 <div className="stack">{stack}</div>
               ))}
             </div>
@@ -59,14 +59,37 @@ export default function ProjectDetails() {
                 <br />
                 Overview:
               </h4>
-              <p>{project.description}</p>
-              <br />
-              <h4>Teck Stack:</h4>
-              <div className="flex-teck-stack">
-                {project.tech_stack.map((stack) => (
-                  <div className="stack">{stack}</div>
+              <p>{project.overview}</p>
+              <h4>Key Features:</h4>
+              <div className="">
+                {project.keyFeatures.map((stack) => (
+                  <ul>
+                    <li>{stack}</li>
+                  </ul>
                 ))}
               </div>
+              <h4>Teck Stack:</h4>
+              <div className="">
+                {project.techStackDet.map((stack) => (
+                  <ul>
+                    <li>{stack}</li>
+                  </ul>
+                ))}
+              </div>
+              <h4>My Role:</h4>
+              <div className="">
+                {project.myRole.map((stack) => (
+                  <ul>
+                    <li>{stack}</li>
+                  </ul>
+                ))}
+              </div>
+              <br />
+              <h4>Thanks for viewing this project!</h4>
+              <p>
+                If you’re interested in how it was built or want to discuss
+                improvements or collaborations, I’d love to connect.
+              </p>
             </div>
             <div className="grid-images">
               Project Gallery is currently empty. We are doing our best to sort
@@ -75,7 +98,6 @@ export default function ProjectDetails() {
           </div>
         </div>
       </div>
-      <div></div>
     </div>
   );
 }

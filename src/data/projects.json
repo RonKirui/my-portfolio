@@ -2,30 +2,138 @@
   "projects": [
     {
       "id": 1,
-      "title": "Chimmuni",
-      "description": "An android app that helps mothers to keep track of their children’s immunizations and schedules.",
-      "image": "/public_assets/image_0.jpg",
-      "tech_stack": ["Java", "Firebase", "Android", "FCM"],
+      "name": "Chimmuni",
+      "title": "Chimmuni – Child Immunization & Vaccination Schedule Management System",
       "live_demo": "",
-      "github": "https://github.com/RonKirui/Chimmuni"
+      "github": "https://github.com/RonKirui/Chimmuni",
+      "likes":0,
+      "image": "/public_assets/image_0.jpg",
+      "description": "A mobile system that helps parents track child immunization records and receive automated reminders for upcoming vaccinations.",
+      "overview": "Chimmuni is a digital health platform designed to simplify the management of child immunization records. It allows parents and guardians to track vaccination schedules, receive timely reminders, view immunization history, and maintain accurate records in one place. By replacing the traditional clinic booklet, the app ensures that no vaccination is missed and provides easy access to health information whenever needed.",
+      "keyFeatures": [
+        "Digital storage of child immunization records",
+        "Automated reminders for upcoming vaccines",
+        "Alerts for overdue or missed immunizations",
+        "Complete vaccination schedule based on national guidelines",
+        "Parent and child profile management",
+        "Exportable immunization history",
+        "Health tips and clinic updates"
+      ],
+      "techStack": [
+        "Android",
+        "Java/Kotlin",
+        "Firebase"
+      ],
+      "techStackDet": [
+        "Android (Java/Kotlin) for development",
+        "Firebase Realtime Database for data storage",
+        "Firebase Authentication for secure user login",
+        "Firebase Cloud Messaging for reminders and alerts",
+        "Material Design Components for UI"
+      ],
+      "myRole": [
+        "Designed UI/UX and app flow",
+        "Implemented vaccination scheduling logic",
+        "Integrated Firebase services for backend functionality",
+        "Developed notification and reminder features",
+        "Performed testing and optimization"
+      ],
+      "results": [
+        "Improved timely vaccination and reduced missed appointments",
+        "Digitized child health records for easy access",
+        "Enhanced communication between caregivers and health facilities",
+        "Modernized immunization record management"
+      ]
     },
     {
       "id": 2,
-      "title": "Alphapp-Dairy",
-      "description": "Android app that enables farmers to record, monitor, and manage daily dairy and poultry production, health, and inventory...",
-      "image": "/public_assets/image_0.jpg",
-      "tech_stack": ["Java", "Firebase", "Android", "SQLite"],
+      "name": "TeaPlus",
+      "title": "TeaPlus – Employee-Based Tea Production Tracking App",
       "live_demo": "",
-      "github": "https://github.com/RonKirui/Alphapp-Dairy"
+      "github": "https://github.com/RonKirui/Teaplus",
+      "likes":0,
+      "image": "/public_assets/image_0.jpg",
+      "description": "A simple mobile app used to record and track daily tea leaves production per employee.",
+      "overview": "TeaPlus is an efficient production tracking system designed for businesses that rely on daily tea collection from employees. The app enables field supervisors or clerks to record tea weights, maintain employee production logs, and calculate daily or weekly totals automatically. It eliminates manual book entries, reduces errors, and provides instant access to historical production data.",
+      "keyFeatures": [
+        "Employee profile creation and identification",
+        "Daily tea weight recording",
+        "Automatic calculation of totals",
+        "Editable entries for corrections",
+        "Historical logs for each employee",
+        "Fast and lightweight user interface",
+        "Secure cloud backup"
+      ],
+      "techStack": [
+        "Android",
+        "Java",
+        "Firebase"
+      ],
+      "techStackDet": [
+        "Android (Java) for development",
+        "Firebase Realtime Database for storing production records",
+        "Firebase Authentication for user management",
+        "Material Design for a clean UI"
+      ],
+      "myRole": [
+        "Designed UI optimized for quick daily entries",
+        "Implemented production recording and history logic",
+        "Integrated Firebase backend services",
+        "Developed employee management module",
+        "Tested and optimized app performance"
+      ],
+      "results": [
+        "Simplified daily tea production record keeping",
+        "Eliminated manual books and reduced entry errors",
+        "Increased transparency and accountability",
+        "Enabled quick access to historical production trends"
+      ]
     },
     {
       "id": 3,
-      "title": "TeaPlus",
-      "description": "An Android app built in Java that enables tea farmers to record, track and manage tea leaves production.",
-      "image": "/public_assets/image_0.jpg",
-      "tech_stack": ["Java", "Firebase", "Android", "SQLite"],
+      "name": "AlphaApp Dairy",
+      "title": "AlphaApp Dairy – Digital Dairy Management System",
       "live_demo": "",
-      "github": "https://github.com/RonKirui/TeaPlus"
+      "github": "https://github.com/RonKirui/Alphapp-Dairy",
+      "likes":0,
+      "image": "/public_assets/image_0.jpg",
+      "description": "A dairy management app for recording daily milk production and calculating farmer payments.",
+      "overview": "AlphaApp Dairy is a streamlined dairy record management system that enables dairy administrators and farmers to maintain accurate daily milk logs, calculate payments, and analyze production trends. By combining modern UI with accurate record management, the app eliminates traditional inconsistencies found in paper records and promotes better transparency in dairy operations.",
+      "keyFeatures": [
+        "Farmer profile registration and management",
+        "Daily milk quantity recording",
+        "Automated monthly payment calculations",
+        "Production charts and analytics",
+        "Editable entries and clean data history",
+        "Exportable reports (PDF/Excel)",
+        "Real-time data access through cloud storage"
+      ],
+      "techStack": [
+        "Android",
+        "Java",
+        "Firebase",
+        "MPAndroidChart"
+      ],
+      "techStackDet": [
+        "Android (Java) for app development",
+        "Firebase Realtime Database for storing dairy data",
+        "Firebase Authentication for secure access",
+        "MPAndroidChart for visual analytics and graphs",
+        "Material Design Components for interface design"
+      ],
+      "myRole": [
+        "Designed intuitive dashboards and data-entry workflows",
+        "Implemented milk recording logic and payment calculations",
+        "Integrated charts and analytics module",
+        "Connected the app to Firebase for data storage",
+        "Built reporting and export features"
+      ],
+      "results": [
+        "Modernized dairy record-keeping systems",
+        "Reduced manual calculation errors",
+        "Provided farmers with transparent access to production and payments",
+        "Enabled real-time management of dairy operations"
+      ]
     }
   ]
 }
